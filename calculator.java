@@ -12,6 +12,11 @@ public class calculator {
         return a - b;
     }
 
+    // Multiplication method
+    public static double multiply(double a, double b) {
+        return a * b;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -30,6 +35,10 @@ public class calculator {
         // Perform subtraction
         double subResult = subtract(num1, num2);
         System.out.println("Subtraction Result: " + subResult);
+
+        // Perform multiplication
+        double mulResult = multiply(num1, num2);
+        System.out.println("Multiplication Result: " + mulResult);
 
         sc.close();
     }
