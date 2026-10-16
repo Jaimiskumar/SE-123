@@ -7,6 +7,11 @@ public class calculator {
         return a + b;
     }
 
+    // Subtraction method
+    public static double subtract(double a, double b) {
+        return a - b;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -19,8 +24,12 @@ public class calculator {
         double num2 = sc.nextDouble();
 
         // Perform addition
-        double result = add(num1, num2);
-        System.out.println("Addition Result: " + result);
+        double addResult = add(num1, num2);
+        System.out.println("Addition Result: " + addResult);
+
+        // Perform subtraction
+        double subResult = subtract(num1, num2);
+        System.out.println("Subtraction Result: " + subResult);
 
         sc.close();
     }
