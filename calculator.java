@@ -17,6 +17,14 @@ public class calculator {
         return a * b;
     }
 
+    // Division method
+    public static double divide(double a, double b) {
+        if (b == 0.0) {
+            throw new ArithmeticException("Cannot divide by zero");
+        }
+        return a / b;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -39,6 +47,14 @@ public class calculator {
         // Perform multiplication
         double mulResult = multiply(num1, num2);
         System.out.println("Multiplication Result: " + mulResult);
+
+        // Perform division
+        if (num2 == 0.0) {
+            System.out.println("Division Result: Cannot divide by zero");
+        } else {
+            double divResult = divide(num1, num2);
+            System.out.println("Division Result: " + divResult);
+        }
 
         sc.close();
     }
